@@ -1,0 +1,60 @@
+body {
+  background-color: #ffffff;
+}
+
+.column {
+  height: 100vh;
+}
+
+.fifty-left {
+  background: url('top02.jpg') no-repeat top center;
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.fifty-right {
+  background-color: #efefef;
+  background-size: cover;
+}
+
+.top-title {
+  padding-top: 10vh
+}
+
+.input-form {
+  height: 60vh;
+  padding: 5vh;
+  margin: 5vh;
+  background-color: #708090;
+
+  .form-group {
+  margin-bottom: 2vh;
+  }
+}
+
+.form-control {
+  height: 45px;
+}
+
+.text-white {
+  color:#ffffff;
+}
+
+.text-white {
+  color:#000000;
+}
+
+.small-letter {
+  font-size: small;
+}
+
+.alert {
+  margin-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
