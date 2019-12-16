@@ -1,13 +1,12 @@
 <div class ="top-wrapper">
-  <div class="row">
-    <div class="column fifty-left col-md-6 text-center">
-    </div>
-    <div class="column fifty-right col-md-6 text-center">
-      <h1 class ="top-title">NazoDule</h1>
-      <h2 class="text-black small-letter">NazoDuleは謎解き・脱出ゲームの参加記録ができるスケジュールサービスです</h2>
-      <div class="input-form text-center">
-      </div>
-      <%= link_to '新規登録はこちら', users_new_path, class: 'btn btn-outline-dark' %>
+  <div class="column fifty-left text-center">
+  </div>
+  <div class="column fifty-right text-center">
+    <h1 class ="top-title">NazoDule</h1>
+    <h2 class="text-black small-letter">NazoDuleは謎解き・脱出ゲームの参加記録ができるスケジュールサービスです</h2>
+    <div class="top-btn text-center">
+      <%= link_to 'アカウント作成', users_new_path, class: 'btn btn-primary btn-block' %>
+      <%= link_to 'ログイン', sessions_new_path, class: 'btn btn-outline-dark btn-block' %>
     </div>
   </div>
 </div>

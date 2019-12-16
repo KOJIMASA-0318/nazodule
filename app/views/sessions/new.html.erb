@@ -1,0 +1,22 @@
+<div class ="top-wrapper">
+    <div class="column fifty-left text-center">
+    </div>
+    <div class="column fifty-right text-center">
+      <h2 class ="top-title">ログイン</h2>
+      <div class="text-center">
+          <%= form_for :session,url: login_path do |f| %>
+            <div class="login-form">
+              <div class="form-group">
+                <%= f.label :email, "メールアドレス",class: 'text-white' %>
+                <%= f.text_field :email, class: 'form-control' %>
+              </div>
+              <div class="form-group">
+                <%= f.label :password, "パスワード（半角英数8文字以上32文字以下）",class: 'text-white' %>
+                <%= f.password_field :password, class: 'form-control' %>
+              </div>
+            </div>
+            <%= f.submit "ログイン", class: 'btn btn-outline-primary' %>
+          <% end %>
+      </div>
+    </div>
+</div>

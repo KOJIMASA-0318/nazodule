@@ -2,8 +2,16 @@ body {
   background-color: #ffffff;
 }
 
+
+@media all and (min-width: 500px) {
+  .top-wrapper {
+    display: flex;
+  }
+}
+
 .column {
   height: 100vh;
+  width: 100%;
 }
 
 .fifty-left {
@@ -19,17 +27,30 @@ body {
 .fifty-right {
   background-color: #efefef;
   background-size: cover;
+  padding: 5vh;
 }
 
 .top-title {
-  padding-top: 10vh
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.top-btn{
+  height: 30vh;
+  padding: 5vh;
+  margin: 10vh 5vh;
+
+  .btn {
+    margin-bottom:8vh;
+  }
 }
 
 .input-form {
   height: 60vh;
   padding: 5vh;
-  margin: 5vh;
+  margin: 3vh 5vh;
   background-color: #708090;
+  text-align: left;
 
   .form-group {
   margin-bottom: 2vh;
@@ -40,13 +61,22 @@ body {
   height: 45px;
 }
 
+.login-form {
+  height: 50vh;
+  padding: 10vh 5vh;
+  margin: 10vh 5vh 5vh 5vh;
+  background-color: #708090;
+  text-align: left;
+
+  .form-group {
+  margin-bottom: 7vh;
+  }
+}
+
 .text-white {
   color:#ffffff;
 }
 
-.text-white {
-  color:#000000;
-}
 
 .small-letter {
   font-size: small;

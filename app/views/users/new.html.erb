@@ -1,34 +1,30 @@
 <div class ="top-wrapper">
-  <div class="row">
-    <div class="column fifty-left col-md-6 text-center">
-        <h2 class ="top-title">Top画像</h2>
+    <div class="column fifty-left text-center">
     </div>
-    <div class="column fifty-right col-md-6 text-center">
-      <h2 class ="top-title">謎Dule 新規登録</h2>
+    <div class="column fifty-right text-center">
+      <h2 class ="top-title">NazoDuleをはじめる</h2>
       <div class="text-center">
           <%= form_for @user do |f| %>
-          <div class="input-form">
-            <div class="form-group">
-            <%= f.label :name, class: 'text-white' %>
-            <%= f.text_field :name, class: 'form-control' %>
+            <div class="input-form">
+              <div class="form-group">
+                <%= f.label :name, "名前（全角10文字以内）",class: 'text-white' %>
+                <%= f.text_field :name, class: 'form-control' %>
+              </div>
+              <div class="form-group">
+                <%= f.label :email, "メールアドレス",class: 'text-white' %>
+                <%= f.text_field :email, class: 'form-control' %>
+              </div>
+              <div class="form-group">
+                <%= f.label :password, "パスワード（半角英数8文字以上32文字以下）",class: 'text-white' %>
+                <%= f.password_field :password, class: 'form-control' %>
+              </div>
+              <div class="form-group">
+                <%= f.label :password_confirmation, "パスワードを再度入力してください",class: 'text-white' %>
+                <%= f.password_field :password_confirmation, class: 'form-control' %>
+              </div>
             </div>
-            <div class="form-group">
-            <%= f.label :email, class: 'text-white' %>
-            <%= f.text_field :email, class: 'form-control' %>
-            </div>
-            <div class="form-group">
-            <%= f.label :password, class: 'text-white' %>
-            <%= f.password_field :password, class: 'form-control' %>
-            </div>
-            <div class="form-group">
-            <%= f.label :password_confirmation, class: 'text-white' %>
-            <%= f.password_field :password_confirmation, class: 'form-control' %>
-            </div>
-          </div>
-          <%= f.submit "新規登録", class: 'btn btn-outline-primary' %>
+            <%= f.submit "アカウント作成", class: 'btn btn-outline-primary' %>
           <% end %>
       </div>
-
     </div>
-  </div>
 </div>
